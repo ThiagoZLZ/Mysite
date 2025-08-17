@@ -22,7 +22,7 @@ class PostView(View):
 
     def get(self, request):
         posts = self.queryset
-        return render(request, self.template_name, {'posts': posts})
+        return render(request, self.template_name, {'post': posts})
 
 
 class PostDetail(generic.DetailView):
